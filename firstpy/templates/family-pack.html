@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block title %}Family Packs - Ice Cream Corner{% endblock title %}
+
+{% block body %}
+<div class="container py-5">
+  <!-- Hero -->
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold">Family Pack Ice Creams</h1>
+    <p class="text-muted">Share the joy with everyone. Perfect for parties, picnics, and weekend treats!</p>
+  </div>
+
+  <!-- Pack Options -->
+  <div class="row text-center mb-5">
+    <div class="col-md-4">
+      <h5>1 Litre Tub</h5>
+      <p>Ideal for small families — pick your favorite flavor.</p>
+    </div>
+    <div class="col-md-4">
+      <h5>Combo Pack</h5>
+      <p>Mix & match 3 flavors in one family-friendly bundle.</p>
+    </div>
+    <div class="col-md-4">
+      <h5>Party Size</h5>
+      <p>Go big! Serves 10–12 people, perfect for celebrations.</p>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <div class="row text-center mb-5">
+    <div class="col-md-6">
+      <p><strong>Freshly packed daily</strong></p>
+    </div>
+    <div class="col-md-6">
+      <p><strong>Available in over 15 flavors</strong></p>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <div class="text-center mb-5">
+    <img src="https://images.unsplash.com/photo-1741038522886-c82e2a83e236?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded shadow" alt="Family Pack Ice Cream"  class="img-fluid rounded w-100 h-100 object-fit-cover mt-4" style=" max-height: 400px;">
+  </div>
+
+  <!-- CTA -->
+  <div class="text-center">
+    <a href="/order" class="btn btn-success btn-lg">Order Now</a>
+  </div>
+</div>
+{% endblock body %}

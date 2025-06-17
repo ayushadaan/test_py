@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}Ice Cream - Ice Cream Corner{% endblock title %}
+
+{% block body %}
+<div class="container py-5">
+  <!-- Hero Section -->
+  <div class="text-center mb-5">
+    <h1 class="display-4 fw-bold">Our Signature Ice Creams</h1>
+    <p class="text-muted">Indulge in the richest, creamiest ice creams made from the finest ingredients.</p>
+  </div>
+
+  <!-- Flavors Section -->
+  <div class="row text-center mb-5">
+    <div class="col-md-4">
+      <h5>Classic Vanilla</h5>
+      <p>Silky smooth and universally loved.</p>
+    </div>
+    <div class="col-md-4">
+      <h5>Belgian Chocolate</h5>
+      <p>Deep, rich, and intensely chocolatey.</p>
+    </div>
+    <div class="col-md-4">
+      <h5>Mango Delight</h5>
+      <p>Made with real Alphonso mangoes for tropical joy.</p>
+    </div>
+  </div>
+
+  <!-- Visual Section -->
+  <div class="text-center mb-5">
+    <img src="https://images.unsplash.com/photo-1588790644779-5a7311c2f097?q=80&w=1464&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded shadow" alt="Ice Cream"  class="img-fluid rounded w-100 h-100 object-fit-cover mt-4" style=" max-height: 400px;"/>
+  </div>
+
+  <!-- CTA -->
+  <div class="text-center">
+    <a href="/menu" class="btn btn-primary btn-lg">Browse Full Menu</a>
+  </div>
+</div>
+{% endblock body %}

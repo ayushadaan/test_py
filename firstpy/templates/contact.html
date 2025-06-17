@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Contact - Ice Cream Corner{% endblock title %}
+
+{% block body %}
+<div class="container py-5">
+  <div class="row mb-4">
+    <div class="col text-center">
+      <h1 class="display-5 fw-bold">Contact Us</h1>
+      <p class="text-muted">
+        If you have any questions, feedback, or just want to say hi — we’d love to hear from you!
+      </p>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <!-- Contact Form -->
+    <div class="col-md-6">
+      <div class="card border-0 shadow-sm">
+        <div class="card-body">
+          <h5 class="card-title mb-4">Send Us a Message</h5>
+          <form method="POST" action="/contact/">
+            {% csrf_token %}
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="col-md-6">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <h5 class="card-title mb-4">Reach Us At</h5>
+          <p><i class="bi bi-geo-alt-fill text-danger me-2"></i> 123 Dessert Lane, Sweetville, FL 45678</p>
+          <p><i class="bi bi-telephone-fill text-success me-2"></i> +1 (555) 123-4567</p>
+          <p><i class="bi bi-envelope-fill text-primary me-2"></i> contact@icecreamcorner.com</p>
+          <hr>
+          <h6>Opening Hours</h6>
+          <p>Mon - Sun: 12:00 PM – 10:00 PM</p>
+
+          <!-- Google Maps (Optional) -->
+          <div class="mt-3">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112046.3592679557!2d77.14154341984585!3d28.646279888989863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd36dec4705d%3A0xd1d9df37d91b610a!2sNaturals%20Ice%20Cream!5e0!3m2!1sen!2sin!4v1749915263705!5m2!1sen!2sin" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}

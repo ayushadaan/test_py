@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block title %}About{% endblock title %}
+
+{% block body %}
+<div class="container py-5">
+  <div class="row align-items-center">
+    <div class="col-lg-6 mb-4 mb-lg-0">
+      <img src="https://images.unsplash.com/photo-1723341500670-7af0963c0cda?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="img-fluid rounded shadow" alt="Ice Cream">
+    </div>
+    <div class="col-lg-6">
+      <h1 class="display-5 fw-bold">Welcome to Ice Cream Corner</h1>
+      <p class="lead text-muted mt-3">
+        Your go-to place for delicious handcrafted ice creams, softies, and frozen delights made with love and premium ingredients.
+      </p>
+      <p>
+        At Ice Cream Corner, we believe every scoop tells a story — whether it’s a classic vanilla cone or a new seasonal surprise. Come taste happiness in every bite!
+      </p>
+      <a href="/menu" class="btn btn-primary btn-lg mt-3">View Our Menu</a>
+    </div>
+  </div>
+
+  <hr class="my-5">
+
+  <div class="row text-center">
+    <div class="col-md-4">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <i class="bi bi-heart-fill fs-1 text-danger"></i>
+          <h5 class="card-title mt-3">Made With Love</h5>
+          <p class="card-text">Every batch of ice cream is made fresh with care, passion, and the finest ingredients.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-4 mt-md-0">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <i class="bi bi-snow fs-1 text-info"></i>
+          <h5 class="card-title mt-3">Always Fresh</h5>
+          <p class="card-text">Our products are freshly churned daily and stored at perfect temperatures for optimal flavor.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mt-4 mt-md-0">
+      <div class="card border-0 shadow-sm h-100">
+        <div class="card-body">
+          <i class="bi bi-star-fill fs-1 text-warning"></i>
+          <h5 class="card-title mt-3">Loved Locally</h5>
+          <p class="card-text">We’re proud to be a favorite hangout spot for families, kids, and ice cream lovers of all ages.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}
